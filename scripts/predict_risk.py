@@ -5,7 +5,7 @@ import joblib
 import os
 
 # Paths
-MODEL_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood_model.pkl"
+MODEL_PATH = "data\\flood_model.pkl"
 
 # Load trained model
 model = joblib.load(MODEL_PATH)
@@ -43,3 +43,4 @@ df_input = pd.DataFrame(input_data)
 predicted_class = model.predict(df_input)
 
 print(f"Predicted Flood Risk Class: {predicted_class[0]}")
+
