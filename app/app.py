@@ -97,7 +97,7 @@ st.header("District-Level Flood Risk Prediction")
 MODEL_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood_model.pkl"
 
 # Google Drive file ID
-FILE_ID = "1awWsEJbv46bG38OabWXAE1YwfvLJOVGt"
+FILE_ID = "1HBe-_a-wAcymSXg8KDsfJmZVSIt3mBJf"
 URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
 # Download if not already present
