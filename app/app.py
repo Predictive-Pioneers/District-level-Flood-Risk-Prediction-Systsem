@@ -11,9 +11,9 @@ from streamlit_folium import st_folium
 from email.mime.text import MIMEText
 import smtplib
 from twilio.rest import Client
-import os
 import google.generativeai as genai
 from dotenv import load_dotenv
+import gdown
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
@@ -95,6 +95,17 @@ st.header("District-Level Flood Risk Prediction")
 # Load trained model
 # ---------------------------
 MODEL_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood_model.pkl"
+
+# Google Drive file ID
+FILE_ID = "1awWsEJbv46bG38OabWXAE1YwfvLJOVGt"
+URL = f"https://drive.google.com/uc?id={FILE_ID}"
+
+# Download if not already present
+if not os.path.exists(MODEL_PATH):
+    os.makedirs("data", exist_ok=True)
+    gdown.download(URL, MODEL_PATH, quiet=False)
+
+# Load the model
 model = joblib.load(MODEL_PATH)
 
 # ---------------------------
