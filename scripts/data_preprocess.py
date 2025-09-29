@@ -3,8 +3,8 @@ from sklearn.preprocessing import StandardScaler
 import os
 
 # Paths
-DATA_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood.csv"
-PROCESSED_DATA_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood_processed.csv"
+DATA_PATH = "data\\flood.csv"
+PROCESSED_DATA_PATH = "data\\flood_processed.csv"
 
 # Load dataset
 df = pd.read_csv(DATA_PATH)
