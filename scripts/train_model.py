@@ -6,8 +6,8 @@ import joblib
 import os
 
 # Paths
-PROCESSED_DATA_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood_processed.csv"
-MODEL_PATH = "D:\\banglore internship\\major_project\\Early Flood Prediction System\\data\\flood_model.pkl"
+PROCESSED_DATA_PATH = "data\\flood_processed.csv"
+MODEL_PATH = "data\\flood_model.pkl"
 
 # Load processed data
 df = pd.read_csv(PROCESSED_DATA_PATH)
@@ -38,3 +38,4 @@ print(f"R2 Score: {r2:.3f}")
 # Save trained model
 joblib.dump(model, MODEL_PATH)
 print(f"Trained regression model saved at {MODEL_PATH}")
+
