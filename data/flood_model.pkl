@@ -1,1 +1,40 @@
 
+{
+    "0": 1,
+    "1": [
+        20
+    ],
+    "2": {
+        "0": 3,
+        "1": "|",
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": -1,
+        "6": -1,
+        "7": 63
+    },
+    "3": false,
+    "4": [
+        "MonsoonIntensity",
+        "TopographyDrainage",
+        "RiverManagement",
+        "Deforestation",
+        "Urbanization",
+        "ClimateChange",
+        "DamsQuality",
+        "Siltation",
+        "AgriculturalPractices",
+        "Encroachments",
+        "IneffectiveDisasterPreparedness",
+        "DrainageSystems",
+        "CoastalVulnerability",
+        "Landslides",
+        "Watersheds",
+        "DeterioratingInfrastructure",
+        "PopulationScore",
+        "WetlandLoss",
+        "InadequatePlanning",
+        "PoliticalFactors"
+    ]
+}
